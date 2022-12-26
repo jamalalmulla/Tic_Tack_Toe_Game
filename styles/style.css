@@ -1,0 +1,174 @@
+
+body{
+    font-family: 'Courier New', Courier, monospace; 
+    background: #D3D3D3;    
+}
+h1{
+    text-align: center;
+    line-height: 0pt;
+    font-family:'Courier New', Courier, monospace;
+}
+.turn{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 0pt;
+    
+}
+
+.score{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+
+}
+section{
+    text-align: center;
+    align-items: center;
+}
+
+.gameContainer{
+ 
+        /* border: 1px solid black;  */
+        
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        grid-column-gap: 10px; /* space between columns, change as needed */
+        grid-row-gap: 10px; /* space between rows, change as needed */
+        height: 100%;
+
+      
+}
+
+.cell{
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    /* width: 300px; */
+    height: 150px;
+    border: 3px solid;
+    cursor: pointer;
+    font-size: 70px;
+    line-height: 2;
+    text-align: center;
+
+
+    
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .cell {
+        background: #71797E;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        /* width: 10; */
+        height: 120px;
+        border: 1px solid;
+        cursor: pointer;
+        font-size: 25px;
+        line-height: 5;
+    }
+    .score{
+        font-weight:100;
+        line-height: 20pt;
+    }
+    .turn{
+        font-weight: 100;
+        line-height: 20pt;
+        font-size:smaller;
+    }
+    h1{
+        font-weight: 300;
+        font-size:large ;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .cell {background: #848884;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    /* width: 10; */
+    height: 125px;
+    border: 2px solid;
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 4;
+    }
+    .turn{
+        font-weight: 200;
+        line-height: 20pt;
+    } 
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .cell {background: #808080;
+    height: 135px;
+    border: 3px solid;
+    cursor: pointer;
+    font-size: 40px;
+    line-height: 3;
+}
+    .turn{
+        font-weight:bolder;
+    } 
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .cell {
+        background: #7393B3;
+        height: 140px;
+        border: 3.5px solid;
+        cursor: pointer;
+        font-size: 45px;
+        line-height: 3;
+  } 
+}
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .cell {
+        background: #B2BEB5;
+        height: 145px;
+        border: 4px solid;
+        cursor: pointer;
+        font-size: 50px;
+        line-height: 3;
+    }
+  }
+
+#cell1{
+    border-top: none;
+    border-left: none;
+}
+.cell:hover {
+    background-color: #8ab996;
+  }
+#cell2{
+    border-top: none;
+}
+#cell3{
+    border-top: none;
+    border-right: none;
+}
+#cell4{
+
+    border-left: none;
+}
+#cell6{
+
+    border-right: none;
+}
+#cell7{
+    border-bottom: none;
+    border-left: none;
+}
+#cell8{
+    border-bottom: none;
+
+}
+#cell9{
+    border-bottom: none;
+    border-right: none;
+}
+
